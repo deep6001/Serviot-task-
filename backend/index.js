@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: 'http://localhost:5173' || process.env.CLIENT_URL,
+  origin: 'https://serviot-task.vercel.app' || process.env.CLIENT_URL,
   credentials: true
 }));
 connectDB();
