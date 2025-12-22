@@ -17,7 +17,7 @@ function Navbar() {
 
   async function handleLogout() {
     try {
-      await axiosInstance.post("/auth/logout", {}, { withCredentials: true });
+      await axiosInstance.post("/api/auth/logout", {}, { withCredentials: true });
       window.location.href = "/login";
     } catch (err) {
       console.log("Logout failed:", err);

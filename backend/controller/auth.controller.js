@@ -91,3 +91,7 @@ export const userProfile = async (req, res) => {
   }
 };
 
+export const Logout = (req,res)=>{
+    res.clearCookie('token');
+    res.status(200).json({message:"Logout successful"});
+}
