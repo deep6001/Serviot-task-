@@ -1,16 +1,89 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# To do List By Deep Patel
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Use React js and Node js for the  building this project.
 
-## React Compiler
+### Folder Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+Todolist/
+├── backend/
+|   |--config/              #database connection 
+|   |--controller/          #Logic of the api endpoint
+|   |--models/              #Sceama of the database collection
+|   |--routes/              #All the Api router
+|   |--middleware/          #all the Middleware 
+|   |--validation/          #Validation of the input 
+|   |--helper/              #helper function 
+├── client/
+├── ├──src/
+│     ├── pages/
+│     ├─  components/     # Stores the converted JSON files
+│     ├── Axios/          # Axious Intance 
+│     ├── store/          # Redux store
+│     ├── index.js        # API server to send JSON files
+```
 
-## Expanding the ESLint configuration
+## Running the Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+For Frontend
+```sh
+cd client
+npm run dev
+```
+For Backend
+```sh
+cd backend
+npm run dev
+```
+
+## ENV example
+
+For Backend
+
+```sh
+PORT=
+MONGODB_URI=
+JWT_SECRET=
+CLIENT_URL=
+```
+
+For Frontend
+```sh
+VITE_BASE_URL=
+```
+
+## ENV example
+
+For Backend
+
+```sh
+
+```
+
+For Frontend
+```sh
+VITE_BASE_URL=
+```
+
+
+
+
+
+
+
+
+
+## 🔗 Live Url 
+
+[[https://serviot-task.vercel.app/]](https://serviot-task.vercel.app/)
+
+## 🔗 Postman Collection
+
+[[https://drive.google.com/file/d/1ALo6dm07f3IqtGB0RtJemUSx6luY1zvN/view?usp=sharing]](https://drive.google.com/file/d/1ALo6dm07f3IqtGB0RtJemUSx6luY1zvN/view?usp=sharing)
+
+
+
+
